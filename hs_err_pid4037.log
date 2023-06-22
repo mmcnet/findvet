@@ -1,0 +1,96 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f55ed4f7401, pid=4037, tid=4062
+#
+# JRE version: OpenJDK Runtime Environment (11.0.10+9) (build 11.0.10+9-Ubuntu-0ubuntu1.18.04)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.10+9-Ubuntu-0ubuntu1.18.04, mixed mode, sharing, tiered, compressed oops, serial gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x2401]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P" (or dumping to /home/marcson/git/findvet/core.4037)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:35229 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=44709 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Djava.security.egd=file:/dev/./urandom -Xverify:none -XX:TieredStopAtLevel=1 -Dspring.boot.project.name=findvet -javaagent:/app/ads/java/eclipse/configuration/org.eclipse.osgi/406/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 br.com.findvet.FindvetApplication
+
+Host: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz, 1 cores, 9G, Linux Mint 19.1 Tessa
+Time: Fri May 28 15:07:57 2021 -03 elapsed time: 719.383381 seconds (0d 0h 11m 59s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f55e8553800):  JavaThread "RMI TCP Accept-44709" daemon [_thread_in_vm, id=4062, stack(0x00007f55cdf98000,0x00007f55ce099000)]
+
+Stack: [0x00007f55cdf98000,0x00007f55ce099000],  sp=0x00007f55ce096210,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x2401]
+C  [libjimage.so+0x30ea]
+C  [libjimage.so+0x35c6]  JIMAGE_FindResource+0xd6
+V  [libjvm.so+0x5c0fde]
+V  [libjvm.so+0x5c3d40]
+V  [libjvm.so+0xe46cc5]
+V  [libjvm.so+0xe4457a]
+V  [libjvm.so+0xe47252]
+V  [libjvm.so+0x6779dd]
+V  [libjvm.so+0x870e5c]
+j  sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop()V+68 java.rmi@11.0.10
+j  sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run()V+1 java.rmi@11.0.10
+j  java.lang.Thread.run()V+11 java.base@11.0.10
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x880719]
+V  [libjvm.so+0x87e85d]
+V  [libjvm.so+0x92af7c]
+V  [libjvm.so+0xe7f84f]
+V  [libjvm.so+0xe7bf9f]
+V  [libjvm.so+0xc1d34e]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop()V+68 java.rmi@11.0.10
+j  sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run()V+1 java.rmi@11.0.10
+j  java.lang.Thread.run()V+11 java.base@11.0.10
+v  ~StubRoutines::call_stub
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x00007f55df8a6f48
+
+Register to memory mapping:
+
+RAX=0x00000000000057cb is an unknown value
+RBX=0x00007f55ce0962c1 is pointing into the stack for thread: 0x00007f55e8553800
+RCX=0x00007f55df89101c is an unknown value
+RDX=0x00000000000057cb is an unknown value
+RSP=0x00007f55ce096210 is pointing into the stack for thread: 0x00007f55e8553800
+RBP=0x00007f55ce096230 is pointing into the stack for thread: 0x00007f55e8553800
+RSI=0x00007f55ce0962c0 is pointing into the stack for thread: 0x00007f55e8553800
+RDI=0x00007f55ed6fa030: <offset 0x0000000000205030> in /usr/lib/jvm/java-11-openjdk-amd64/lib/libjimage.so at 0x00007f55ed4f5000
+R8 =0x0 is NULL
+R9 =0x000000000ccbfc40 is an unknown value
+R10=0x00007f55ce0962fd is pointing into the stack for thread: 0x00007f55e8553800
+R11=0x00007f55f03b44c0: <offset 0x00000000001af4c0> in /lib/x86_64-linux-gnu/libc.so.6 at 0x00007f55f0205000
+R12=0x00007f55ce0962c0 is pointing into the stack for thread: 0x00007f55e8553800
+R13=0x0000000000008424 is an unknown value
+R14=0x00007f55ce097358 is pointing into the stack for thread: 0x00007f55e8553800
+R15=0x00007f55b00ca780 points into unknown readable memory: 0x2f696d722f6e7573 | 73 75 6e 2f 72 6d 69 2f
+
+
+Registers:
+RAX=0x00000000000057cb, RBX=0x00007f55ce0962c1, RCX=0x00007f55df89101c, RDX=0x00000000000057cb
+RSP=0x00007f55ce096210, RBP=0x00007f55ce096230, RSI=0x00007f55ce0962c0, RDI=0x00007f55ed6fa030
+R8 =0x0000000000000000, R9 =0x000000000ccbfc40, R10=0x00007f55ce0962fd, R11=0x00007f55f03b44c0
+R12=0x00007f55ce0962c0, R13=0x0000000000008424, R14=0x00007f55ce097358, R15=0x00007f55b00ca780
+RIP=0x00007f55ed4f7401, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f55ce096210)
+0x00007f55ce096210:   0000000000000000 00007f55e8009d30
+0x00007f55ce096220:   0000000000000000 00007f55ce0962c0
+0x00007f55ce096230:   00007f55ce0962a0 00007f55ed4f80ea
+0x00007f55ce096240:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x00007f55ed4f7401)
+0x00007f55ed4f7301:   c5 4c 01 e3 48 89 ce e8 d3 f3 ff ff e9 69 fd ff
+0x00007f55ed4f7311:   ff 89 d1 0f b7 74 08 fe 66 41 89 74 0e fe e9 7a
+0x00007f55ed4f7321:   fe ff ff 0f 1f 40 00 8b 08 

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FINDVET - A saúde do seu amigo e seu conforto, são os
+	nossos objetivos.</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+
+<link href="css/findvet_estilo.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="shortcut icon" type="imagem/x-icon" href="img/logo.ico" />
+
+</head>
+<body>
+	<main id="home" class="cor_texto_padrao font">
+		<section class="menu container-fluid m-0 p-0">
+			<nav
+				class="navbar navbar-expand-lg navbar-light  fixed-top  fs-7">
+				<div class="container">
+					<button class="navbar-toggler" type="button"
+						data-bs-toggle="collapse" data-bs-target="#menu"
+						aria-controls="navbarNav" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse horizontal_center paddingMenu"
+						id="menu">
+						<ul class="navbar-nav elemento_meio_vertical">
+							<li class="nav-item"><a class="navbar-brand nav-link active"
+								aria-current="page" href="#home"><img src="img/logo.jpg"
+									class="logo"></a></li>
+							<li class="nav-item dropdown"><a
+								class="nav-link dropdown-toggle" href="#"
+								id="navbarDropdownMenuLink" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false"> A FindVet </a>
+								<ul class="dropdown-menu"
+									aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item cor_texto_padrao" href="#quemsomos">Quem Somos</a></li>
+									<li><a class="dropdown-item cor_texto_padrao" href="#funciona">Como Funciona</a></li>
+									<li><a class="dropdown-item cor_texto_padrao" href="#blog">Blog</a></li>
+								</ul></li>
+							<li class="nav-item"><a class="nav-link" href="#servico">Serviços</a>
+							</li>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="#cadastro"
+								tabindex="-1" aria-disabled="true">Cadastro</a></li>
+							<li class="nav-item"><a class="nav-link" href="#fale"
+								tabindex="-1" aria-disabled="true">Fale Conosco</a></li>
+							<li class="nav-item dropdown"><a
+								class="nav-link dropdown-toggle" href="#"
+								id="navbarDropdownMenuLink" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">Baixe o app</a>
+								<ul class="dropdown-menu"
+									aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item cor_texto_padrao" href="#android">Android</a></li>
+									<li><a class="dropdown-item cor_texto_padrao" href="#ios">IOS</a></li>
+								</ul></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
+		<section class="linha_verde fixed-top m-0 p-0"></section>
+		<section id ="cadastro" class="section_branca margin_section_jumbo container-fluid m-0 p-0">
+			<div class="jumbotron text-center tamanho_jumbo horizontal_center">
+				<div class="container margin_section_jumbo p-0 mx-auto mt-5 pt-1">
+				 	 <div class="row">
+					    <div class="col-sm-12">
+					    	 <div class="card stylo_cards fundoPreCadastro ">
+							  <div class="card-body">
+							    <h5 class="card-title fs-4 fw-bold titulo_branco">Pré-Cadastro</h5>
+							    <h6 class="card-subtitle mb-2  fs-6 fw-bold fst-italic titulo_branco pb-3">Receba nossa mensagem de início das atividades!</h6>
+							  	<form action="/pessoa/cadastro"  method="post" class="row gy-2 gx-3 align-items-center">
+							  		<div class="row mb-3">
+										  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-file-earmark-text col-sm-2 col-form-label col-form-label-sm titulo_branco" viewBox="0 0 16 16">
+											  <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+											  <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+										</svg>
+										  <div class="col-sm-10">
+										    <input class="form-control form-control-lg" type="text" name="nome" placeholder="Nome">
+										  </div>
+									</div>
+									<div class="row mb-3">
+										 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope col-sm-2 col-form-label col-form-label-sm titulo_branco" viewBox="0 0 16 16">
+										  	<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+										 </svg>
+										  <div class="col-sm-10">
+										     <input class="form-control form-control-lg" type="email" name="email" placeholder="email@seuemail.com.br">
+										  </div>
+									</div>
+									<div class="row mb-3">
+										 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-telephone col-sm-2 col-form-label col-form-label-sm titulo_branco" viewBox="0 0 16 16">
+										  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+										</svg>
+										  <div class="col-sm-10">
+										    <input class="form-control form-control-lg" type="text" name="telefone" placeholder="(99) 9999-9999">
+										  </div>
+									</div>
+									  <div class="row mb-3">
+										  <div class="col-sm-5">
+										   	<input type="submit" value="Salvar" class="btn btn-secondary mb-3 "></input>
+										  </div>
+									</div>
+							  	</form>
+							   
+							  </div>
+							</div>
+					    </div>
+						</div>
+					  </div>
+				</div>
+			</div>
+		</section>
+		<section id ="quemsomos" class="detalhe_vermelha_section container-fluid m-0 p-0"></section>
+		<section class="section_vermelha container-fluid m-0 p-0">
+			<p class="titulo titulo_branco fs-3 fw-bold">QUEM SOMOS</p>
+			<div class="container lh-lg texto_branco">
+				<div class="row">
+			<p>
+				Somos a maior empresa de saúde domiciliar do Brasil e, todos os dias, levamos tecnologia e carinho humano para as pessoas. Estamos aqui para simplificar a sua vida: você não precisa mais sair de casa para fazer um exame laboratorial ou tomar uma vacina. O agendamento é todo feito pelo aplicativo, em até 3 minutos e sem taxa domiciliar. Começamos no Rio de Janeiro em 2016 e, hoje, a nossa #OndaVerde já chegou em São Paulo, Brasília, Curitiba e Vitória, com uma equipe de mais de 1.000 funcionários. Queremos muito mais!
+			</p>
+			</div>
+			</div>
+		 </section>
+		<section id ="funciona" class="detalhe_branco_section m-0 p-0"></section>
+		<section class="section_branca m-0 p-0">
+			<p class="titulo titulo_branco fs-3 fw-bold cor_texto_padrao">COMO FUNCIONA</p>
+			<div class="container-fluid horizontal_center quadro_comoFunciona">
+				  <div class="row m-2 p-2">
+				    <div class="col-sm-6 col-xs-12">
+				    	<img class="img-fluid imgFuncionamento" src="img/lupa.png">
+					    <p class="Texto fw-bold">1.Pesquise por veterinários do seu estado</p>
+					   <p>Primeiro faça login, após isso clique em solicitar consulta, feito isso você poderá escolher por uma consulta agendada para um dia posterior ou uma consulta para o mesmo dia solicitando uma consulta programada.Lembrando que para se solicitar uma consulta programada o veterinário deverá estar online e deverá aceitar o atendimento.</p>
+				    </div>
+				    <div class="col-sm-6 col-xs-12"><img class="img-fluid imgFuncionamento" src="img/veterinario.png">
+					    <p class="Texto fw-bold">2.Pesquise por veterinários do seu estado.</p>
+					    <p>Após escolher o tipo de consulta que deseja, chegou a hora de escolher um de nossos profissionais, você irá consultar por médicos que atendem em sua região. Se escolheu por uma consulta programada, os médicos que estiverem disponíveis apareceram, caso a consulta seja agendada apareceram todos que atendem em sua região.</p>
+				    </div>
+				  <div class="row m-2 p-2">
+				    <div class="col-sm-6 col-xs-12"><img class="img-fluid imgFuncionamento" src="img/calendario.png">
+					    <p class="Texto fw-bold">3.Escolher data e horário de atendimento.</p>
+					    <p>Caso a consulta seja programada basta apenas escolher o médico que irá até o local para atendimento.Se for uma consulta agendada, você deverá escolher data e hora para que a consulta seja realizada, você receberá uma mensagem de confirmação de agendamento.<p>
+				    </div>
+				    <div class="col-sm-6 col-xs-12"><img class="img-fluid imgFuncionamento" src="img/recebendo_veterinario.png">
+					     <p class="Texto fw-bold">4.Hora de receber nosso profissional para atendimento.</p>
+					     <p>Nosso profissional chegará em sua residência para atendimento ao seu pet, aqui o pagamento já deverá ter sido aprovado, ele deverá emitir a receita e o cliente deverá avaliar o atendimento para mantermos um nível de qualidade de atendimento.</p>
+				    </div>
+				  </div>
+				  </div>
+			</div>
+		</section>
+		<section id ="servico" class="detalhe_verde_section m-0 p-0"></section>
+		<section class="section_verde m-0 p-0">
+			<p class="titulo titulo_branco fs-3 fw-bold">SERVIÇOS</p>
+			<div id="consultas" class="container-fluid">
+			  <div class="text-center">
+			    <h3 class="texto_branco">Escolha o tipo de atendimento</h3>
+			  </div>
+			  <div class="row">
+			    <div class="col-sm-4 col-xs-12">
+			      <div class="panel panel-default text-center stylo_panel panel_border">
+			        <div class="panel-heading barra_titulo_panel">
+			          <h3>Programada</h3>
+			        </div>
+			        <div class="panel-body">
+			          <p><strong>20</strong> Lorem</p>
+			          <p><strong>15</strong> Ipsum</p>
+			          <p><strong>5</strong> Dolor</p>
+			          <p><strong>2</strong> Sit</p>
+			          <p><strong>Endless</strong> Amet</p>
+			        </div>
+			        <div class="panel-footer">
+			          <h3>$19</h3>
+			          <h4>per month</h4>
+			          <button type="submit" class="btn btn-secondary mb-3">Abrir</button>
+			        </div>
+			      </div>      
+			    </div>     
+			    <div class="col-sm-4 col-xs-12">
+			      <div class="panel panel-default text-center stylo_panel panel_border">
+			        <div class="panel-heading barra_titulo_panel">
+			          <h3>Agendada</h3>
+			        </div>
+			        <div class="panel-body">
+			          <p><strong>50</strong> Lorem</p>
+			          <p><strong>25</strong> Ipsum</p>
+			          <p><strong>10</strong> Dolor</p>
+			          <p><strong>5</strong> Sit</p>
+			          <p><strong>Endless</strong> Amet</p>
+			        </div>
+			        <div class="panel-footer">
+			          <h3>$29</h3>
+			          <h4>per month</h4>
+			           <button type="submit" class="btn btn-secondary mb-3">Abrir</button>
+			        </div>
+			      </div>      
+			    </div>       
+			    <div class="col-sm-4 col-xs-12">
+			      <div class="panel panel-default text-center stylo_panel panel_border">
+			        <div class="panel-heading barra_titulo_panel">
+			          <h3>Premium</h3>
+			        </div>
+			        <div class="panel-body">
+			          <p><strong>100</strong> Lorem</p>
+			          <p><strong>50</strong> Ipsum</p>
+			          <p><strong>25</strong> Dolor</p>
+			          <p><strong>10</strong> Sit</p>
+			          <p><strong>Endless</strong> Amet</p>
+			        </div>
+			        <div class="panel-footer">
+			          <h3>$49</h3>
+			          <h4>per month</h4>
+			           <button type="submit" class="btn btn-secondary mb-3">Abrir</button>
+			        </div>
+			      </div>      
+			    </div>    
+			  </div>
+			</div>
+			
+		</section>
+		<section id ="fale" class="detalhe_branco_verde_section m-0 p-0"></section>
+		<section class="section_branca m-0 p-0">
+				<p class="titulo titulo_branco fs-3 fw-bold cor_texto_padrao">FALE CONOSCO</p>
+				<div id="contact" class="container-fluid bg-grey">
+				  <div class="row">
+				    <div class="col-sm-4">
+				      <p>Entre em contato conosco e retornaremos em 24hs no máximo.</p>
+				      <p><span class="glyphicon glyphicon-map-marker"></span> Rio de Janeiro - RJ</p>
+				      <p><span class="glyphicon glyphicon-phone"></span> +55 21 991166866</p>
+				      <p><span class="glyphicon glyphicon-envelope"></span> sac@findvet.com.br </p>
+				    </div>
+				    <div class="col-sm-8">
+				       <form action="/faleconosco" method="post">
+				      <div class="row">
+				   
+				        <div class="col-xs-12 col-sm-6 col-md-6 form-group FaleConoscoNome">
+				          <input class="form-control" id="nome" name="nome" placeholder="Nome" type="text" required>
+				        </div>
+				        <div class="col-xs-12 col-sm-6 col-md-6 form-group FaleConoscoEmail">
+				          <input class="form-control" id="mail" name="email" placeholder="Email" type="email" required>
+				        </div>
+				      </div>
+				      <div class="w-100"></div>
+				      <div class="col-xs-12 col-sm-12 col-md-12 form-group FaleConoscoComentario">
+				      			<textarea class="form-control" id="comentario" name="comentario" placeholder="Comentário" rows="6"></textarea>
+				       </div>
+				      <div class="w-100"></div>
+				      <div class="row">
+				        <div class="col-xs-12 col-md-12 col-sm-12 form-group FaleConoscoEnviar">
+				            <input type="submit" value="Enviar" class="btn btn-secondary mb-3"></input>
+				        </div>
+				      </div>
+				    
+				    </div>
+				      </form>
+				  </div>
+				</div>
+		</section>
+		<section class="detalhe_listrada_cinza_section m-0 p-0"></section>
+		<section class="section_cinza m-0 p-0">
+			<div id="rodape" class="container-fluid">
+				<a href="https://wa.me/5521991166866" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+					z-index:1000;" target="_blank">
+					<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+				</a>
+							  <div class="row">
+				    <div class="col-sm-3 col-xs-12">
+				    		<div class="container-fluid">
+								  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+								    <div class="col-6 col-sm-4 divfull"><img  src="img/logo_transparente.png"
+									class="logo_transparente"></div>					
+								    <div class="w-100 d-none d-md-block"></div>
+								    <div class="col-6 col-sm-4 divfull"> <h6 class="titulo_branco">FindVet Serviços Médicos Ltda. <br />CNPJ: 26.2356.170/0001-01</h6></div>						   
+								  </div>
+							</div>
+				    </div>     
+				    <div class="col-sm-3 col-xs-12">
+				         <h5 class="titulo_branco">FindVet</h5>
+							<p class="texto_branco_rodape">Quem Somos</p>
+							<p class="texto_branco_rodape">Contato<p>
+							<p class="texto_branco_rodape">Termos de Uso</p>
+							<p class="texto_branco_rodape">Política de privacidade</p>
+							<p class="texto_branco_rodape">Produtos e Serviços</p>
+
+				    </div>       
+				    <div class="col-sm-3 col-xs-12">
+				        <h5 class="titulo_branco">Fale Conosco</h5>
+							<p class="texto_branco_rodape">E-mail: sac@findvet.com.br</p>
+							<p class="texto_branco_rodape">RJ - 21 991166866<p>
+							<p class="texto_branco_rodape">(De domingo a domingo, das 6h às 21h)</p>
+				    </div>
+				    <div class="col-sm-3 col-xs-12">
+				       <h5 class="titulo_branco">Acompanhe a FindVet!</h5>
+				        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+						    <div class="col-12 col-sm-12"><img  src="img/redesocial.png"></div>
+						    <div class="w-100 d-none d-md-block"></div>
+						   
+						 </div>
+						 <h5 class="titulo_branco">Baixe agora o nosso app</h5>	
+						 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+						    <div class="col-12 col-sm-12">
+							    <img class="imgRodape" src="img/apple.png">
+							    <img class="imgRodape" src="img/google.png">
+						     </div>	
+						     				
+				    </div>
+			   </div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
