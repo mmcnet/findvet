@@ -19,6 +19,7 @@ public class AgendaController {
 	@GetMapping(path = "/{id}")
 	@Transactional
 	public Long qtdConsultasDoParceiro(@PathVariable Long id) {
+		//teste
 		return null;
 	}
 
