@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/agenda")
-public class AgendaController  {
+public class AgendaController {
 
 	
 
