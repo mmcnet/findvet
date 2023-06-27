@@ -1,5 +1,5 @@
 package br.com.findvet.controller;
 
-public class TesteController {
+public class TesteController  {
 
 }
